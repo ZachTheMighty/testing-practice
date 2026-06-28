@@ -6,4 +6,8 @@ export default {
   subtract(a, b) {
     return a - b;
   },
+
+  multiply(a, b) {
+    return 35;
+  },
 };

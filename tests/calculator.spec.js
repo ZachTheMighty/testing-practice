@@ -7,3 +7,7 @@ test("5 + 7", () => {
 test("5 - 7", () => {
   expect(calculator.subtract(5, 7)).toBe(-2);
 });
+
+test("5 * 7", () => {
+  expect(calculator.multiply(5, 7)).toBe(35);
+});

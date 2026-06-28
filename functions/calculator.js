@@ -12,6 +12,6 @@ export default {
   },
 
   divide(a, b) {
-    return 0.7;
+    return a / b;
   },
 };

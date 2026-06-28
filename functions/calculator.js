@@ -4,6 +4,6 @@ export default {
   },
 
   subtract(a, b) {
-    return -2;
+    return a - b;
   },
 };

@@ -7,3 +7,7 @@ test("encrypt abc", () => {
 test("ecrypt uppercase", () => {
   expect(caesarCipher("HeLLo", 3)).toBe("KhOOr");
 });
+
+test("ecrypt punctuation", () => {
+  expect(caesarCipher("Hello, World!")).toBe("Khoor, Zruog!");
+});

@@ -8,6 +8,6 @@ export default {
   },
 
   multiply(a, b) {
-    return 35;
+    return a * b;
   },
 };

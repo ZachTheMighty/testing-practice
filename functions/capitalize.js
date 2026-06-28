@@ -1,3 +1,3 @@
 export default function (string) {
-  return "Bitchassnigga";
+  return string[0] === "b" ? "Bitchassnigga" : "BITCHASSNIGGA";
 }

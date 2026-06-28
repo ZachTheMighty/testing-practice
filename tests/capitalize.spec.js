@@ -1,3 +1,3 @@
 test("capitalize all lowercase", () => {
-  expect(capitlize("bitchassnigga")).toBe("Bitchassnigga");
+  expect(capitalize("bitchassnigga")).toBe("Bitchassnigga");
 });

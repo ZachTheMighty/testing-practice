@@ -1,3 +1,3 @@
 export default function (string) {
-  return string[0] === "b" ? "Bitchassnigga" : "BITCHASSNIGGA";
+  return string[0].toUpperCase() + string.slice(1);
 }

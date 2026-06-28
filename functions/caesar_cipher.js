@@ -7,3 +7,7 @@ export default function (string, shift) {
 function shiftAlphabet(shift) {
   return ALPHABET.slice(shift) + ALPHABET.slice(0, shift);
 }
+
+function getMappedChar(charIndex, shift) {
+  return shiftAlphabet(shift).charAt(charIndex);
+}

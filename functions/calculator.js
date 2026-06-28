@@ -1,5 +1,5 @@
 export default {
   add(a, b) {
-    return 12;
+    return a + b;
   },
 };

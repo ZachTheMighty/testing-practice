@@ -6,12 +6,18 @@ export default function (string, shift) {
   const shiftedAlphabets = shiftAlphabets(shift);
 
   for (let i = 0; i < string.length; i++) {
-    if (string[i].toUpperCase() === string[i])
-      cypheredText +=
-        shiftedAlphabets.uppercase[getIndexInAlphabet(string[i].toLowerCase())];
-    else
-      cypheredText +=
-        shiftedAlphabets.lowercase[getIndexInAlphabet(string[i].toLowerCase())];
+    if (ALPHABET.includes(string[i].toLowerCase())) {
+      if (string[i].toUpperCase() === string[i])
+        cypheredText +=
+          shiftedAlphabets.uppercase[
+            getIndexInAlphabet(string[i].toLowerCase())
+          ];
+      else
+        cypheredText +=
+          shiftedAlphabets.lowercase[
+            getIndexInAlphabet(string[i].toLowerCase())
+          ];
+    } else cypheredText += string[i];
   }
   return cypheredText;
 }

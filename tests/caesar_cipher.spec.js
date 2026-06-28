@@ -9,5 +9,5 @@ test("ecrypt uppercase", () => {
 });
 
 test("ecrypt punctuation", () => {
-  expect(caesarCipher("Hello, World!")).toBe("Khoor, Zruog!");
+  expect(caesarCipher("Hello, World!", 3)).toBe("Khoor, Zruog!");
 });

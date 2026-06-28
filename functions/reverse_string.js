@@ -1,3 +1,3 @@
 export default function (string) {
-  return "agginssahctib";
+  return string.split("").reverse().join("");
 }

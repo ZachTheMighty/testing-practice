@@ -5,5 +5,5 @@ test("encrypt abc", () => {
 });
 
 test("ecrypt uppercase", () => {
-  expect(caesarCipher("HeLLo")).toBe("KhOOr");
+  expect(caesarCipher("HeLLo", 3)).toBe("KhOOr");
 });

@@ -1,8 +1,10 @@
 export default function (array) {
   return {
-    average: 4,
-    min: 1,
-    max: 8,
-    length: 6,
+    average:
+      array.reduce((accumulator, current) => accumulator + current, 0) /
+      array.length,
+    min: Math.min(...array),
+    max: Math.max(...array),
+    length: array.length,
   };
 }

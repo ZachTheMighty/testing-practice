@@ -1,8 +1,9 @@
+const ALPHABET = "abcdefghijklmnopqrstuvwxyz";
+
 export default function (string, shift) {
   return "def";
 }
 
 function shiftAlphabet(shift) {
-  const alphabet = "abcdefghijklmnopqrstuvwxyz";
-  return alphabet.slice(shift) + alphabet.slice(0, shift);
+  return ALPHABET.slice(shift) + ALPHABET.slice(0, shift);
 }

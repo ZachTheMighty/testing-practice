@@ -11,3 +11,7 @@ test("5 - 7", () => {
 test("5 * 7", () => {
   expect(calculator.multiply(5, 7)).toBe(35);
 });
+
+test("5 / 7", () => {
+  expect(calculator.divide(5, 7)).toBeCloseTo(0.7);
+});
